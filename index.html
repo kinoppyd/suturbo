@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script type="module">
+      import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo@7.3.0';
+    </script>
+  </head>
+  <body>
+    <div id="notification"></div>
+    <div class="container p-4">
+      <h1 class="text-2xl">素Turbo</h1>
+      <div id="buttons1" class="flex"></div>
+      <div class="pt-4">
+        <turbo-frame id="content">
+          <div>
+            <p>Rails7と一緒にリリースされたHotwire、その一機能であるTurboはRailsに依存しないフロントエンド用新しいフレームワークです。</p>
+            <p>よくRailsの機能はRailsに密結合していると誤解されますが、Hotwireを構成するTurbo, Stimulus, StradaはすべてRailsに直接依存しないライブラリですし、他にもRailsのコア機能の多くはポータブルに作れており、歴史的前後関係は逆になりますが、Railsというのはそれらを組み合わせた結果形になったフレームワークとも言えます。</p>
+          </div>
+          <div class="mt-4">
+            <a href="/next.html" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+              Next
+            </a>
+          </div>
+        </turbo-frame>
+        <div id="buttons2" class="flex"></div>
+      </div>
+    </div>
+  </body>
+</html>

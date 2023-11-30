@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script type="module">
+      import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo@7.3.0';
+    </script>
+  </head>
+  <body>
+    <div class="container p-4">
+      <h1 class="text-2xl">素Turbo</h1>
+      <div class="pt-4">
+        <turbo-frame id="content">
+          <div>
+            <p>Turboがaタグの挙動を上書きしたことにより、Nextボタンを押すとここの文章が変わったはずです。ですが、アドレスバーのURLは変わっていません。</p>
+            <p>Turboはリンクのクリック挙動を監視し、ブラウザのページ遷移機能ではなくFetchAPIを使ってリンク先の内容を取得します。そして取得した内容に同じIDが指定された turbo-frame タグがあるか探します。turbo-frame タグがあった場合、現在のページの turbo-frame タグで囲まれた部分を、取得した内容の turbo-frame タグで囲まれた内容で上書きします。</p>
+            <p>ブラウザの開発者コンソールを開いて、通信内容を見ながらNextボタンを押してみてください。</p>
+          </div>
+          <div class="mt-4">
+            <a href="/incomplete.html" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+              Next
+            </a>
+          </div>
+        </turbo-frame>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<turbo-stream action="update" target="notification">
+  <template>
+    <div id="banner" tabindex="-1" class="flex fixed z-50 gap-8 justify-between items-start py-3 px-4 w-full bg-gray-50 border border-b border-gray-200 sm:items-center dark:border-gray-700 lg:py-4 dark:bg-gray-800">
+      <p class="text-sm font-light text-gray-500 dark:text-gray-400">バナーですね</p>
+    </div>
+  </template>
+</turbo-stream>
+
+<turbo-stream action="update" target="banner-button">
+  <template>
+    <form action="/hide-banner.html" method="post">
+      <button type="submit" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+        バナーが消えるボタン
+      </button>
+    </form>
+  </template>
+</turbo-stream>

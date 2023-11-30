@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script type="module">
+      import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo@7.3.0';
+    </script>
+  </head>
+  <body>
+    <div class="container p-4">
+      <h1 class="text-2xl">直接見に来るとこんな感じに賑やかです</h1>
+      <div>
+        😀😃😄😁😆😅🤣😂🙂🙃😉🫠😊😇
+        😀😃😄😁😆😅🤣😂🙂🙃😉🫠😊😇
+        😀😃😄😁😆😅🤣😂🙂🙃😉🫠😊😇
+      </div>
+      <div class="pt-4">
+        <turbo-frame id="content">
+          <div>
+            <p>このHTMLは完全ですが、 turbo-frame の外にある要素は全く異なります。例えば、ブラウザに直接 /too-much.html と入れてアクセスしてみると、違いに驚くと思います。</p>
+            <p>これも、Turboが turbo-frame タグの中身のみを見ている例です。</p>
+          </div>
+          <div class="mt-4">
+            <a href="/turbo-stream.html" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+              Next
+            </a>
+            <a href="/too-much.html" data-turbo="false" class="ml-4 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+              このボタンはTurboをオフにして、直接 /too-much.thml に飛びます
+            </a>
+          </div>
+        </turbo-frame>
+        <div class="mt-4">
+          <a href="/" data-turbo="false" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+            最初に戻る
+          </a>
+        </div>
+      </div>
+      <div class="mt-4">
+        😀😃😄😁😆😅🤣😂🙂🙃😉🫠😊😇
+        😀😃😄😁😆😅🤣😂🙂🙃😉🫠😊😇
+        😀😃😄😁😆😅🤣😂🙂🙃😉🫠😊😇
+      </div>
+    </div>
+  </body>
+</html>
